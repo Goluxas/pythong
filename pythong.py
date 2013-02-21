@@ -77,7 +77,7 @@ def p2move():
         if (yvector == -1 and ypos < ballMotion[0][1]) or (yvector == 1 and ypos + ballMotion[0][1] > window.get_height()):
             yvector *= -1
     '''
-    # print "Predicted YPos: " + str(ypos)
+    print "Predicted YPos: " + str(ypos)
     if p2paddleRect.centery < ypos:
         motion = [paddlespeed, ypos - p2paddleRect.centery]
         motion.sort()
